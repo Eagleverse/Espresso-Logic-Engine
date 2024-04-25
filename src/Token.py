@@ -5,6 +5,7 @@ class Token:
     #TOKEN TYPES
     NAME = "Name" 
     ACTION = "Action"
+    AMOUNT = "Amount"
     ACCOUNT = "Account"
     # :)
     # lil function to print tokens
@@ -20,8 +21,6 @@ class Token:
         if self.value: return f'{self.type}:{self.value}'
         return f'{self.type}'
 
-    # If exists return the things
-    # token token object object ??? lol
-    # S T E A L
+  
     
     
