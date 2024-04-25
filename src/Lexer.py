@@ -54,7 +54,7 @@ class Lexer:
         # return tokens
 
     
-    myTokens = lex("Melissa Brown withdraw $1.25 MB123456")
+    myTokens = lex("Melissa Brown withdraw $150.00 MB123456")
     print(myTokens)
 
     if (myTokens != []):
