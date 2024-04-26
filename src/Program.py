@@ -1,6 +1,7 @@
 from Statement import Statement
 from Token import Token
 from Lexer import Lexer
+import Bank
 
 class Program:
     def __init__(self):
@@ -45,9 +46,12 @@ class Program:
         print(program.Statement.Name) 
         return program
     
-myTokens = Lexer.lex("Melissa Brown withdraw $1.25 MB123456")
+# myTokens = Lexer.lex("Melissa Brown withdraw $1000.00 MB123456")
 
-parsedStatement = Program.parse(myTokens)
+# parsedStatement = Program.parse(myTokens)
+# accessibleAccounts = Bank.Bank.initializeAccounts()
+# print(accessibleAccounts[0])
+# parsedStatement.Statement.evaluate(accessibleAccounts)
         
         
     

@@ -53,7 +53,7 @@ class Lexer:
         # return tokens
 
     
-    myTokens = lex("Melissa Brown withdraw $150.00 MB123456")
-    print(myTokens)
+    # myTokens = lex("Melissa Brown withdraw $150.00 MB123456")
+    # print(myTokens)
     
         
