@@ -1,3 +1,20 @@
+'''
+Brandon Pranke
+Melissa Brown
+
+CSC 330 Language Design and Implementation
+
+4/28/2024
+
+Week 7: Final Project
+
+Creates an Account Holder class which will be used with our Banking language to create accounts and withdraw 
+or deposit money
+
+We certify that this is our own original work
+
+'''
+
 class AccountHolder:
   def __init__(self, balance, firstName, lastName, accountID):
     self.balance = balance
@@ -5,6 +22,7 @@ class AccountHolder:
     self.lastName = lastName
     self.accountID = accountID
 
+# Lines 26 - 44 are getters / setters for attributes
   def getBalance(self):
     return self.balance
 
@@ -26,6 +44,10 @@ class AccountHolder:
   def setLastName(self, newLastName):
     self.lastName = newLastName
 
+  # Subtracts balance from account holder object and returns new balance
+  # If account does not have sufficient funds, a message will be printed to the user
+  # to alert them that they are not wealthy enough. In this case, the original
+  # balance is returned
   def withdraw(self, moneyToWithdraw):
     if (moneyToWithdraw > self.balance):
       print("Not enough funds")
@@ -33,11 +55,11 @@ class AccountHolder:
       self.setBalance(self.balance - moneyToWithdraw)
     return self.balance
 
+  # Adds balance to account holder object and returns new balance
   def deposit(self, moneyToDeposit):
     self.setBalance(self.balance + moneyToDeposit)
     return self.balance
 
+  # In a print statement, account holder first and last name is printed
   def __str__(self):
-    # just re-learning how to do toString but in Python, we 
-    # don't need to keep this at all
     return self.firstName + " " + self.lastName

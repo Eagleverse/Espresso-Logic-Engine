@@ -8,7 +8,6 @@ class Statement:
 
     def evaluate(self, accounts):
         curAccount = next((x for x in accounts if x.accountID == self.Account), None)
-        print(curAccount)
         if curAccount == None:
             raise ValueError("Account does not exist")
         elif self.Action == "withdraw":

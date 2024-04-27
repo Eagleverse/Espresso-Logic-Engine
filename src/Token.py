@@ -7,9 +7,6 @@ class Token:
     ACTION = "Action"
     AMOUNT = "Amount"
     ACCOUNT = "Account"
-    # :)
-    # lil function to print tokens
-    # Next = profit
 
     #Initializer
     def __init__(self, type, value, column):

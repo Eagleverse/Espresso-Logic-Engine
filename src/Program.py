@@ -43,15 +43,7 @@ class Program:
                     
             else:
                 raise ValueError("Invalid token type")
-        print(program.Statement.Name) 
         return program
-    
-# myTokens = Lexer.lex("Melissa Brown withdraw $1000.00 MB123456")
-
-# parsedStatement = Program.parse(myTokens)
-# accessibleAccounts = Bank.Bank.initializeAccounts()
-# print(accessibleAccounts[0])
-# parsedStatement.Statement.evaluate(accessibleAccounts)
         
         
     
